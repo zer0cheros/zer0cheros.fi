@@ -1,10 +1,16 @@
 import type { NextPage } from 'next'
+import Section_1 from '../components/section_1/Section_1'
+import Section_2 from '../components/section_2/Section_2'
+import Section_3 from '../components/section_3/Section_3'
 
 
 const Home: NextPage = () => {
   return (
-    <div className="flex bg-[url('/layer_1.jpg')] bg-no-repeat bg-center bg-cover min-h-screen flex-col items-center justify-center py-2">
-    </div>
+    <>
+      <Section_1 />
+      <Section_2/>
+      <Section_3/>
+    </>
   )
 }
 

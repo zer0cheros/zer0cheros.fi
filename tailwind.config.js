@@ -6,7 +6,23 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        cloud: {
+          '0%' : {
+            left: '0%'
+            
+        },
+        '100%' : {
+            left: '100%',
+            transform: 'translateX(-100%)'
+        }
+        },
+        animation: {
+          cloud: 'cloud 60s linear infinite'
+        }
+      }
+    },
   },
   plugins: [],
 }

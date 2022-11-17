@@ -1,8 +1,9 @@
 import React from 'react'
+import Background from './Background'
 
 const Section_1 = () => {
   return (
-    <div>Section_1</div>
+    <Background />
   )
 }
 
