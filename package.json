@@ -7,10 +7,14 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.5.5",
+    "@react-three/drei": "^9.45.0",
+    "@react-three/fiber": "^8.9.1",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "react-three": "^0.9.7",
+    "three": "^0.146.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
