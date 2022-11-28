@@ -16,7 +16,7 @@ const Background = () => {
     delaySpeed: 2000
   })
   return (
-    <div className="relative bg-[url('/layer_1.jpg')] bg-no-repeat bg-center bg-cover max-h-screen">
+    <div className="relative bg-[url('/layer_1.jpg')] bg-no-repeat bg-center bg-cover max-h-screen shadow-xl">
         <Header />
         <Mountain />
         <div className='absolute z-20 top-[10%] w-full h-screen text-center'>
