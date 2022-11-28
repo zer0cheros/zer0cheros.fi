@@ -9,18 +9,31 @@ module.exports = {
     extend: {
       keyframes: {
         cloud: {
-          '0%' : {
-            left: '0%'
-            
+        '0%' : {
+            marginLeft: '0',
         },
-        '100%' : {
-            left: '100%',
-            transform: 'translateX(-100%)'
+        '50%': {
+          marginLeft: '70%',
+          backgroundPosition: '-30%'
+        },
+        '100%' :{
+          marginLeft: '0'
         }
         },
-        animation: {
-          cloud: 'cloud 60s linear infinite'
-        }
+        text: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate(0px, -80px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translate(0px, 0px)'
+          }
+        } 
+      },
+      animation: {
+        clouds: 'cloud 60s linear infinite',
+        texts: 'text 3s infinite'
       }
     },
   },
