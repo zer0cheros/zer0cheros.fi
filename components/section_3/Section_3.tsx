@@ -1,9 +1,10 @@
 import React from 'react'
+import Cloud from '../section_1/Cloud'
 
 const Section_3 = () => {
   return (
     <div className='w-full h-screen bg-orange-300'>
-    <h1>Section 3</h1>
+    <Cloud/>
     </div>
   )
 }

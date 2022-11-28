@@ -1,10 +1,11 @@
 import React from 'react'
+import About from './About'
+
 
 const Section_2 = () => {
   return (
-    <div className="relative bg-white min-h-screen">
-    <h1>Section 2</h1>
-    
+    <div className="relative bg-white">
+    <About/>
     </div>
   )
 }
