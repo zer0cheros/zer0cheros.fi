@@ -10,7 +10,7 @@ const Background = () => {
   const [animate, setAnimate] = useState(false)
   const [text, count] = useTypewriter({
     words: [
-      "cheros", "Emission", "Time"
+      "cheros", "Emission", "Hacking", "Code"
     ],
     loop: true,
     delaySpeed: 2000
