@@ -35,16 +35,16 @@ const Cube = () => {
     const gl = useThree((state) => state.gl)
     const waterNormals = useLoader(THREE.TextureLoader, '/waternormals.jpeg')
     waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping
-    const geom = React.useMemo(() => new THREE.PlaneGeometry(10000, 10000), [])
+    const geom = React.useMemo(() => new THREE.PlaneGeometry(1000, 1000), [])
     const config = React.useMemo(
       () => ({
-        textureWidth: 512,
-        textureHeight: 112,
+        textureWidth: 612,
+        textureHeight: 612,
         waterNormals,
         sunDirection: new THREE.Vector3(),
         sunColor: 0xffffff,
         waterColor: 0x001e0f,
-        distortionScale: 3.7,
+        distortionScale: 4.7,
         fog: false,
       }),
       [waterNormals]
@@ -63,25 +63,28 @@ const Cube = () => {
     const boxRef = React.useRef<Mesh>(null)
         return(
             <mesh ref={boxRef} {...props} onClick={optidevOnclick}  >
-                <boxGeometry args={[30,30,0.5]} />
+                <boxGeometry args={[30,30,30]} />
                 <meshStandardMaterial map={optidev}  />
             </mesh>
         )
     }
     return (
-    <Canvas args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 5, 100], fov: 55, near: 1, far: 20000 }}>
+    <Canvas args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [5, 5, 100], fov: 55, near: 1, far: 20000 }}>
       <Sky azimuth={1} inclination={0.6} distance={1000} />
-      <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[10, 5, 5]} />
       <Ocean />
-      <Flex flexDir='row'>
-        <Box margin={1}>
+      <Flex position={[-40,20,5]} flexWrap="wrap" flexDirection='row' size={[100, 200, 220]}>
+      <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 3.2} />
+      <ambientLight intensity={0.4} />
+      <directionalLight position={[100, 5, 5]} />
+        <Box margin={1} >
         <Project/>
-        </Box> 
-        <Box margin={1}>
+         </Box> 
+        <Box margin={1} >
         <Project />
-        </Box> 
+        </Box>
+        <Box margin={1} >
+        <Project />
+        </Box>
       </Flex>     
     </Canvas>
   )
