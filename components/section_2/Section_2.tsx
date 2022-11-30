@@ -4,7 +4,7 @@ import About from './About'
 
 const Section_2 = () => {
   return (
-    <div className="relative bg-white h-screen">
+    <div className="bg-white h-screen">
     <About/>
     </div>
   )
