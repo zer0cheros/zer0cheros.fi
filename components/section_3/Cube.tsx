@@ -15,14 +15,14 @@ type Props = {
 declare global {
   namespace JSX {
       interface IntrinsicElements {
-          water?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+          water: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
       }
   }
 }
 declare module 'react' {
   interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
     // extends React's HTMLAttributes
-    args: any
+    args?: any
   }
 }
 
