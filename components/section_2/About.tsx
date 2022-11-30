@@ -5,10 +5,10 @@ const About = () => {
   return (
     <div className='flex flex-col h-screen w-full p-3'>
         <div className='w-full justify-center flex'><h1 className='text-green-600 flex-none text-[4vw] w-auto font-medium'>About</h1></div>
-        <div className='w-full h-full flex'>
-            <div className="w-[50%] bg-[url('/male.jpg')] rounded-xl shadow-xl m-2">
+        <div className='w-full h-full flex flex-col md:flex-row'>
+            <div className="md:w-[50%] w-full h-full bg-[url('/male.jpg')] bg-cover rounded-xl shadow-xl m-2">
             </div>
-        <div className=' w-[50%] m-2'>
+        <div className=' md:w-[50%] w-full h-full m-2'>
             <div>
                 <p className='text-3xl p-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Animi obcaecati pariatur, non dolores error at cupiditate

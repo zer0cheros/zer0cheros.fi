@@ -19,7 +19,7 @@ const Background = () => {
     <div className="relative bg-[url('/layer_1.jpg')] bg-no-repeat bg-center bg-cover max-h-screen shadow-xl">
         <Header />
         <Mountain />
-        <div className='absolute z-20 top-[10%] w-full h-screen text-center'>
+        <div className='absolute z-10 top-[10%] w-full h-screen text-center'>
             <div className='flex ml-[22%] '>
                 <h1 style={{textShadow:'3px -1px 400px black'}} className='text-[12vw] font-medium text-white py-6 border-white'>Zer0<span style={{textShadow:'2px 1px 2px black'}} className=' text-green-600 flex-none text-[12vw] w-auto font-medium py-6'>{text}</span><Cursor /></h1>
             </div>

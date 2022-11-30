@@ -33,7 +33,8 @@ module.exports = {
       },
       animation: {
         clouds: 'cloud 60s linear infinite',
-        texts: 'text 3s'
+        texts: 'text 3s',
+        navbar: 'text 1s'
       }
     },
   },
