@@ -63,17 +63,17 @@ const Cube = () => {
     const boxRef = React.useRef<Mesh>(null)
         return(
             <mesh ref={boxRef} {...props} onClick={optidevOnclick}  >
-                <boxGeometry args={[30,30,30]} />
+                <boxGeometry args={[25,25,10]} />
                 <meshStandardMaterial map={optidev}  />
             </mesh>
         )
     }
     return (
-    <Canvas args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [5, 5, 100], fov: 55, near: 1, far: 20000 }}>
-      <Sky azimuth={1} inclination={0.6} distance={1000} />
+      <Canvas args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [5, 5, 100], }}>
       <Ocean />
-      <Flex position={[-40,20,5]} flexWrap="wrap" flexDirection='row' size={[100, 200, 220]}>
-      <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 3.2} />
+      <Flex position={[-20,10,0]} flexDirection='row' flexGrow={1} flexBasis={0}>
+      <Sky azimuth={1} inclination={0.6} distance={1000} />
+      <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
       <ambientLight intensity={0.4} />
       <directionalLight position={[100, 5, 5]} />
         <Box margin={1} >
