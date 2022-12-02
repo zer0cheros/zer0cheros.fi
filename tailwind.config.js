@@ -29,12 +29,13 @@ module.exports = {
             opacity: '1',
             transform: 'translate(0px, 0px)'
           }
-        } 
+        },
       },
       animation: {
         clouds: 'cloud 60s linear infinite',
         texts: 'text 3s',
-        navbar: 'text 1s'
+        navbar: 'text 1s',
+        pulse1: 'pulse delay 1s '
       }
     },
   },

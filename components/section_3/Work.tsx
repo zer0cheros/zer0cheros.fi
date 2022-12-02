@@ -3,7 +3,9 @@ import Cube from './Cube'
 
 const Work = () => {
   return (
-    <Cube />
+    <div className='md:w-[70%] w-[90%] h-[70%] m-auto rounded shadow-xl'>
+      <Cube />
+      </div>
   )
 }
 
