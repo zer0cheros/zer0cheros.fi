@@ -88,11 +88,11 @@ const Cube = () => {
     return (
       <Canvas className='rounded shadow-xl' args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 0, 70], }}>
       <Ocean />
-      <Flex position={[-20,15, 0]} flexDirection='row' flexGrow={1} flexBasis={0}>
+      <Flex position={[-20,15, 0]} flexDirection='row'>
       <Sky azimuth={1} inclination={0.6} distance={1000} />
       <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
-      <ambientLight intensity={0.4} />
-      <directionalLight position={[100, 5, 5]} />
+      <ambientLight intensity={0.35} />
+      <directionalLight position={[1, 500, 4]} />
         <Box margin={1} >
         <Project1/>
          </Box> 
