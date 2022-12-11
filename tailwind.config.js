@@ -45,13 +45,16 @@ module.exports = {
             opacity: '1'
           }
         },
+      },
       animation: {
         clouds: 'cloud 60s linear infinite',
         texts: 'text 3s',
         navbar: 'text 1s',
-        pulse1: 'pulse 2s infinite'
+        pulse1: 'pulse delay-1 1s infinite',
+        pulse2: 'pulse delay-2 2s infinite',
+        pulse3: 'pulse delay-3 3s infinite'
       }
-    },
+    
   },
   plugins: [],
 }}
