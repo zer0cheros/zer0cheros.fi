@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Cube from './Cube'
+import Modal from './Modal'
 
 const Work = () => {
   return (
-    <div className=' w-[90%] h-[80%] m-auto rounded shadow-xl'>
+    <div className='relative w-[90%] h-[80%] m-auto rounded shadow-xl'>
       <Cube />
       </div>
   )

@@ -6,6 +6,7 @@ import { Flex, Box } from '@react-three/flex'
 import * as THREE from 'three'
 import {  Mesh, Plane } from "three"
 import { Water } from 'three-stdlib'
+import Modal from './Modal'
 
 extend({ Water })
 
@@ -27,6 +28,7 @@ declare module 'react' {
 }
 
 const Cube = () => {
+  const [visible, setVisible] = React.useState(false)
   const optidevOnclick = ()=>{
     console.log('hej');
   }
@@ -86,6 +88,7 @@ const Cube = () => {
       )
     }
     return (
+      <>
       <Canvas className='rounded shadow-xl' args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 0, 70], }}>
       <Ocean />
       <Flex position={[-20,15, 0]} flexDirection='row'>
@@ -104,6 +107,11 @@ const Cube = () => {
          </Box> 
       </Flex>     
     </Canvas>
+    <Modal visible={visible} />
+    <button onClick={()=>{
+        setVisible(true)
+      }}>open Modal</button>
+      </>
   )
 }
 
