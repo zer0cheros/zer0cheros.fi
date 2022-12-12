@@ -4,7 +4,7 @@ import { OrbitControls, Sky } from '@react-three/drei'
 import {TextureLoader} from 'three/src/loaders/TextureLoader'
 import { Flex, Box } from '@react-three/flex'
 import * as THREE from 'three'
-import {  Mesh, Plane } from "three"
+import {  Camera, Mesh, Plane } from "three"
 import { Water } from 'three-stdlib'
 import Modal from './Modal'
 
@@ -88,12 +88,17 @@ const Cube = () => {
       )
     }
     return (
+<<<<<<< HEAD
       <>
       <Canvas className='rounded shadow-xl' args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 0, 70], }}>
+=======
+      <Canvas className='rounded shadow-xl' args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 0, 85], }}>
+        <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
+>>>>>>> 4ac6f660ce093e23d0a51345b9930cfa4c38c894
       <Ocean />
-      <Flex position={[-20,15, 0]} flexDirection='row'>
+      <Flex position={[-30,15, 0]} flexDirection='row'>
       <Sky azimuth={1} inclination={0.6} distance={1000} />
-      <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
+      
       <ambientLight intensity={0.35} />
       <directionalLight position={[1, 500, 4]} />
         <Box margin={1} >

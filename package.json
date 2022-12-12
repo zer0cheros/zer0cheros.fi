@@ -19,7 +19,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-simple-typewriter": "^5.0.1",
-    "react-three": "^0.9.7",
+    "react-three": "^0.8.0",
     "three": "^0.146.0"
   },
   "devDependencies": {
