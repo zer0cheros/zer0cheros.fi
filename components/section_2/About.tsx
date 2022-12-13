@@ -6,16 +6,16 @@ const About = () => {
     <div className='flex flex-col h-screen w-full p-3'>
         <div className='w-full justify-center flex'></div>
         <div className='w-full h-full flex flex-col md:flex-row'>
-            <div className="md:w-[50%] w-full h-full bg-[url('/male.jpg')] bg-cover rounded-xl shadow-xl m-2">
+            <div className=" w-full h-full bg-[url('/male.jpg')] bg-cover rounded-xl shadow-xl m-2">
             </div>
         <div className='md:w-[50%] w-full h-full m-2'>
-            <div >
-              <h1 className='text-3xl p-4 text-center text-green-600' >Zer0cheros</h1>
+            <div className='max-h-1/2'>
+              <h1 className=' md:text-3xl text-xl p-4 text-center text-green-600' >Zer0cheros</h1>
                 <p className='md:text-2xl text-md p-4 text-justify'>Programming teacher from Kokkola, Finland. Creating and sharing knowledge is my passion.
                 With over 8 years experience working as a teacher and couple of yeas working with development in classrooms. We produce exciting and innovative projects.
                 </p>
-                <div>
-                <h1 className='text-3xl p-4 text-center text-green-600' >Frontend</h1>
+                <div className=''>
+                <h1 className='md:text-3xl text-xl p-1 text-center text-green-600' >Frontend</h1>
                 <ul className='flex flex-wrap p-3 gap-6 w-full h-full items-center justify-center text-center'>
                   <li className="w-a h-12">
                       <svg className="w-auto m-auto h-full animate-[pulse_1s_infinite]" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="m9.032 2 10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"></path></svg>
@@ -36,7 +36,7 @@ const About = () => {
                     </ul>
                     </div>
                     <div>
-                  <h1 className='text-3xl p-4 text-center text-green-600' >Backend</h1>
+                  <h1 className='md:text-3xl text-xl p-4 text-center text-green-600' >Backend</h1>
                   <ul className='flex flex-wrap p-3 gap-6 w-full h-full items-center justify-center  text-center'>
                   <li className='w-auto shrink h-12'>
                     <svg className="w-auto m-auto h-full animate-pulse1" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M112.678 30.334 68.535 4.729c-2.781-1.584-6.424-1.584-9.227 0L14.82 30.334C11.951 31.985 10 35.088 10 38.407v51.142c0 3.319 1.992 6.423 4.862 8.083l11.729 6.688c5.627 2.772 7.186 2.772 9.746 2.772 8.334 0 12.662-5.039 12.662-13.828v-50.49C49 42.061 49.445 41 48.744 41h-5.622C42.41 41 41 42.061 41 42.773v50.49c0 3.896-3.616 7.773-10.202 4.48L18.676 90.73c-.422-.23-.676-.693-.676-1.181V38.407c0-.482.463-.966.891-1.213l44.378-25.561a1.508 1.508 0 0 1 1.415 0l43.963 25.555c.421.253.354.722.354 1.219v51.142c0 .488.092.963-.323 1.198l-44.133 25.576c-.378.227-.87.227-1.285 0l-11.317-6.749c-.341-.198-.752-.269-1.08-.086-3.145 1.783-3.729 2.02-6.679 3.043-.727.253-1.799.692.408 1.929l14.798 8.754a9.29 9.29 0 0 0 4.647 1.246 9.303 9.303 0 0 0 4.666-1.246l43.976-25.582c2.871-1.672 4.322-4.764 4.322-8.083V38.407c-.001-3.319-1.452-6.414-4.323-8.073zM77.727 81.445c-11.727 0-14.309-3.235-15.17-9.066-.102-.628-.634-1.379-1.274-1.379h-5.73c-.709 0-1.28.86-1.28 1.566 0 7.466 4.06 16.512 23.454 16.512 14.038 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.104 0 12.46 1.954 13.841 8.091.119.577.646.991 1.241.991h5.754c.354 0 .691-.143.939-.396.241-.272.367-.613.336-.979-.893-10.569-7.913-15.494-22.112-15.494-12.632 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.956-3.978 7.067-13.308 7.067z"></path></svg>
@@ -45,7 +45,7 @@ const About = () => {
                   </ul>
                   </div>
                   <div>
-                  <h1 className='text-3xl p-4 text-center text-green-600' >Dev-Ops</h1>
+                  <h1 className='md:text-3xl text-xl p-4 text-center text-green-600' >Dev-Ops</h1>
                   <ul className='flex flex-wrap p-3 gap-6 w-full h-full items-center justify-center text-center'>
                   <li className="w-auto h-12">
                     <svg className="w-auto m-auto h-full animate-pulse" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M124.8 52.1c-4.3-2.5-10-2.8-14.8-1.4-.6-5.2-4-9.7-8-12.9l-1.6-1.3-1.4 1.6c-2.7 3.1-3.5 8.3-3.1 12.3.3 2.9 1.2 5.9 3 8.3-1.4.8-2.9 1.9-4.3 2.4-2.8 1-5.9 2-8.9 2H79V49H66V24H51v12H26v13H13v14H1.8l-.2 1.5c-.5 6.4.3 12.6 3 18.5l1.1 2.2.1.2c7.9 13.4 21.7 19 36.8 19 29.2 0 53.3-13.1 64.3-40.6 7.4.4 15-1.8 18.6-8.9l.9-1.8-1.6-1zM28 39h10v11H28V39zm13.1 44.2c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7.1 3.1 1.4 3.1 3.1zM28 52h10v11H28V52zm-13 0h11v11H15V52zm27.7 50.2c-15.8-.1-24.3-5.4-31.3-12.4 2.1.1 4.1.2 5.9.2 1.6 0 3.2 0 4.7-.1 3.9-.2 7.3-.7 10.1-1.5 2.3 5.3 6.5 10.2 14 13.8h-3.4zM51 63H40V52h11v11zm0-13H40V39h11v11zm13 13H53V52h11v11zm0-13H53V39h11v11zm0-13H53V26h11v11zm13 26H66V52h11v11zM38.8 81.2c-.2-.1-.5-.2-.8-.2-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.3-.1-.6-.2-.8-.2.3-.4.5-.8.5-.5 0-.9-.4-.9-.9.1-.4.3-.7.5-.8z"></path></svg>

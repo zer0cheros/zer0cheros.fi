@@ -29,8 +29,10 @@ declare module 'react' {
 
 const Cube = () => {
   const [visible, setVisible] = React.useState(false)
-  const optidevOnclick = ()=>{
-    console.log('hej');
+  const [id, setId] = React.useState(0)
+  const showModal = (id:number)=>{
+    setVisible(true)
+    setId(id)
   }
   function Ocean() {
     const ref = React.useRef<THREE.PlaneGeometry | any>(null) 
@@ -59,42 +61,44 @@ const Cube = () => {
     optidev.encoding = THREE.sRGBEncoding
     const boxRef = React.useRef<Mesh>(null)
       return(
-        <mesh ref={boxRef} {...props} onClick={optidevOnclick}  >
+        <mesh ref={boxRef} {...props} onClick={()=>{
+          showModal(1)
+          }}  >
             <boxGeometry args={[25,25,1]} />
             <meshStandardMaterial map={optidev} attach="material"  />
         </mesh>
       )
     }
   function Project2(props:Props){
-    const docker = useLoader(TextureLoader, '/docker.jpg')
-    docker.encoding = THREE.sRGBEncoding
+    const termDocker = useLoader(TextureLoader, '/term.PNG')
+    termDocker.encoding = THREE.sRGBEncoding
     const boxRef = React.useRef<Mesh>(null)
       return(
-        <mesh ref={boxRef} {...props} onClick={optidevOnclick}  >
+        <mesh ref={boxRef} {...props} onClick={()=>{
+          showModal(2)
+          }}  >
             <boxGeometry args={[25,25,1]} />
-            <meshStandardMaterial map={docker} attach="material"  />
+            <meshStandardMaterial map={termDocker} attach="material"  />
         </mesh>
       )
     }
   function Project3(props:Props){
-    const logo = useLoader(TextureLoader, '/logo.PNG')
-    logo.encoding = THREE.sRGBEncoding
+    const fire = useLoader(TextureLoader, '/Firewebbapp.PNG')
+    fire.encoding = THREE.sRGBEncoding
     const boxRef = React.useRef<Mesh>(null)
       return(
-        <mesh ref={boxRef} {...props} onClick={optidevOnclick}  >
+        <mesh ref={boxRef} {...props} onClick={()=>{
+          showModal(3)
+          }}  >
             <boxGeometry args={[25,25,1]} />
-            <meshStandardMaterial map={logo} attach="material"  />
+            <meshStandardMaterial map={fire} attach="material"  />
         </mesh>
       )
     }
     return (
-<<<<<<< HEAD
       <>
-      <Canvas className='rounded shadow-xl' args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 0, 70], }}>
-=======
       <Canvas className='rounded shadow-xl' args={""} gl={{ logarithmicDepthBuffer: true, antialias: false }} camera={{ position: [0, 0, 85], }}>
         <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
->>>>>>> 4ac6f660ce093e23d0a51345b9930cfa4c38c894
       <Ocean />
       <Flex position={[-30,15, 0]} flexDirection='row'>
       <Sky azimuth={1} inclination={0.6} distance={1000} />
@@ -102,7 +106,7 @@ const Cube = () => {
       <ambientLight intensity={0.35} />
       <directionalLight position={[1, 500, 4]} />
         <Box margin={1} >
-        <Project1/>
+        <Project1 />
          </Box> 
         <Box margin={1} >
         <Project2/>
@@ -112,7 +116,7 @@ const Cube = () => {
          </Box> 
       </Flex>     
     </Canvas>
-    <Modal visible={visible} />
+    {visible && <Modal setVisible={setVisible} id={id} /> }
     <button onClick={()=>{
         setVisible(true)
       }}>open Modal</button>

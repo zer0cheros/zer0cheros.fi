@@ -1,29 +1,22 @@
 import React, {useState,useEffect} from 'react'
+import FireWebbApp from './FireWebbApp'
 
 export type Props = {
-    visible: boolean 
+    setVisible: any,
+    id: number
 }
 
-const Modal = ({visible}:Props) => {
-    const [state, setState] = useState(visible)
-    useEffect(()=>{
-        setState(visible)
-    },[visible])
+const Modal = ({setVisible, id}:Props) => {
     return (
-        <>
-        {state ? 
         <div className=' bg-slate-50 absolute top-0 left-0 w-full h-full z-40'>
             <div>
-                <h1 className='font-bold text-xl'>Heading</h1>
-                <p className='text-start text-sm'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, saepe.</p>
+                {id == 1 ? <FireWebbApp /> : null}
+               
             </div>
             <button onClick={()=>{
-                setState(false)
+                setVisible(false)
             }}>Close</button>
         </div>
-               
-        :null}
-    </>
     )
 }
 
