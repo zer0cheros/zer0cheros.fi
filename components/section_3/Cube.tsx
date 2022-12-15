@@ -117,9 +117,6 @@ const Cube = () => {
       </Flex>     
     </Canvas>
     {visible && <Modal setVisible={setVisible} id={id} /> }
-    <button onClick={()=>{
-        setVisible(true)
-      }}>open Modal</button>
       </>
   )
 }

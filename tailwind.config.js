@@ -14,14 +14,27 @@ module.exports = {
       keyframes: {
         cloud: {
         '0%' : {
-            marginLeft: '0',
+            marginLeft: '-50%',
         },
         '50%': {
-          marginLeft: '70%',
+          marginLeft: '30%',
           backgroundPosition: '-30%'
         },
         '100%' :{
-          marginLeft: '0'
+          marginLeft: '-50%'
+        }
+        },
+        cloud2: {
+        '0%' : {
+            marginLeft: '-150%',
+        },
+        '50%': {
+          marginLeft: '-50%',
+          backgroundPosition: '50%'
+          
+        },
+        '100%' :{
+          marginLeft: '-150%'
         }
         },
         text: {
@@ -48,6 +61,7 @@ module.exports = {
       },
       animation: {
         clouds: 'cloud 60s linear infinite',
+        cloudsmg: 'cloud2 40s linear infinite',
         texts: 'text 3s',
         navbar: 'text 1s',
         pulse1: 'pulse delay-1 1s infinite',

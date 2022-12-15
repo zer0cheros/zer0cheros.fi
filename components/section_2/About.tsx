@@ -3,10 +3,10 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='flex flex-col h-screen w-full p-3'>
+    <div className='flex flex-col h-full w-full p-3'>
         <div className='w-full justify-center flex'></div>
         <div className='w-full h-full flex flex-col md:flex-row'>
-            <div className=" w-full h-full bg-[url('/male.jpg')] bg-cover rounded-xl shadow-xl m-2">
+            <div className="md:w-[50%] w-full md:h-full h-[100vh] bg-[url('/male.jpg')] bg-cover rounded-xl shadow-xl m-2">
             </div>
         <div className='md:w-[50%] w-full h-full m-2'>
             <div className='max-h-1/2'>
