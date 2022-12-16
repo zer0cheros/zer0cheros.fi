@@ -3,7 +3,7 @@ import Cloud from './Cloud'
 
 const Mountain = () => {
   return (
-    <div className="relative bg-[url('/layer_2.png')] bg-no-repeat bg-center bg-cover min-h-screen">
+    <div className="relative bg-[url('/layer_2.png')] bg-no-repeat bg-center bg-cover">
         <Cloud />
     </div>
   )
