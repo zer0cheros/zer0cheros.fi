@@ -16,7 +16,7 @@ const Background = () => {
     delaySpeed: 4000
   })
   return (
-    <div className="bg-[url('/layer_1.jpg')] bg-no-repeat bg-center bg-cover shadow-xl">
+    <div className="bg-[url('/layer_1.webp')] bg-no-repeat bg-center bg-cover shadow-xl">
         <Header />
         <Mountain />
         <div className='absolute z-10 md:top-[10%] top-[20%] w-full h-screen text-center'>

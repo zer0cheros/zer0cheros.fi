@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <nav className='absolute z-20 w-full align-center h-24 bg-transparent '>
         <div className='flex h-full justify-between align-center shadow-sm md:px-32 px-12'>
-        <img className='animate-texts mb-2 mt-2 rounded-full shadow-2xl' src="logo.PNG" alt="" />
+        <img className='animate-texts mb-2 mt-2 rounded-full shadow-2xl' src="logo.webp" alt="" />
         <button onClick={toggleNavbar} className=" md:hidden text-gray-500
       border-0
       hover:shadow-none hover:no-underline

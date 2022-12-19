@@ -6,8 +6,10 @@ import { Flex, Box } from '@react-three/flex'
 import * as THREE from 'three'
 import {  Camera, Mesh, Plane } from "three"
 import { Water } from 'three-stdlib'
-import Modal from './Modal'
-
+import dynamic from 'next/dynamic'
+const Modal = dynamic(()=> import('./Modal'), {
+  ssr: false
+})
 extend({ Water })
 
 type Props = {
@@ -86,7 +88,7 @@ const Cube = () => {
       )
     }
   function Project3(props:Props){
-    const fire = useLoader(TextureLoader, '/Firewebbapp.PNG')
+    const fire = useLoader(TextureLoader, '/Firewebbapp.webp')
     fire.encoding = THREE.sRGBEncoding
     fire.dispose()
     const boxRef = React.useRef<Mesh>(null)
