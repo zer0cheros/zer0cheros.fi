@@ -39,6 +39,7 @@ const Cube = () => {
     const gl = useThree((state) => state.gl)
     const waterNormals = useLoader(THREE.TextureLoader, '/waternormals.jpeg')
     waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping
+    waterNormals.dispose()
     const geom = React.useMemo(() => new THREE.PlaneGeometry(1000, 1000), [])
     const config = React.useMemo(
       () => ({
@@ -59,6 +60,7 @@ const Cube = () => {
   function Project1(props:Props){
     const optidev = useLoader(TextureLoader, '/optidev.PNG')
     optidev.encoding = THREE.sRGBEncoding
+    optidev.dispose()
     const boxRef = React.useRef<Mesh>(null)
       return(
         <mesh ref={boxRef} {...props} onClick={()=>{
@@ -72,6 +74,7 @@ const Cube = () => {
   function Project2(props:Props){
     const termDocker = useLoader(TextureLoader, '/term.PNG')
     termDocker.encoding = THREE.sRGBEncoding
+    termDocker.dispose()
     const boxRef = React.useRef<Mesh>(null)
       return(
         <mesh ref={boxRef} {...props} onClick={()=>{
@@ -85,6 +88,7 @@ const Cube = () => {
   function Project3(props:Props){
     const fire = useLoader(TextureLoader, '/Firewebbapp.PNG')
     fire.encoding = THREE.sRGBEncoding
+    fire.dispose()
     const boxRef = React.useRef<Mesh>(null)
       return(
         <mesh ref={boxRef} {...props} onClick={()=>{
