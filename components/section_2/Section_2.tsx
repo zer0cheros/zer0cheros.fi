@@ -4,7 +4,7 @@ import About from './About'
 
 const Section_2 = () => {
   return (
-    <div className="bg-white md:h-screen h-[200vh] w-[90%] m-auto">
+    <div id='about' className=" scroll-smooth bg-white md:h-screen h-[200vh] w-[90%] m-auto">
     <About/>
     </div>
   )

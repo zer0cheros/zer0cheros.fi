@@ -9,8 +9,8 @@ const Home: NextPage = () => {
   return (
     <div className='font-font1 '>
       <Section_1 />
-      <Section_2/>
-      <Section_3/>
+      <Section_2 />
+      <Section_3 />
       <Footer />
     </div>
   )

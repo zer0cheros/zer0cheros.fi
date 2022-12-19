@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 
+
 const Header = () => {
   const [visible, setVisible] = useState(false)
   const toggleNavbar = () =>{
@@ -28,9 +29,8 @@ const Header = () => {
   </svg>
   {visible ? <div className="absolute z-20 animate-navbar right-0 top-24 rounded w-64 h-96 bg-white shadow-xl">
   <ul className='cursor-pointer h-full gap-8 pt-10' >
-            <Link href={'#about'}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>About</li></Link>
-            <Link href={'#contact'}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>Contact</li></Link>
-            <Link href={'#vison'}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>Vision</li></Link>
+            <Link href={'#about'} scroll={false} ><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>About</li></Link>
+            <Link href={'#contact'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>Contact</li></Link>
             <Link href={'#project'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>Projects</li></Link>
         </ul>
   </div>:null}
@@ -38,9 +38,8 @@ const Header = () => {
   </button>
   
         <ul className='cursor-pointer hidden md:flex animate-texts h-full items-center gap-8 p-2'>
-            <Link href={'#about'}><li className='text-gray-500 hover:text-green-600 text-2xl'>About</li></Link>
-            <Link href={'#contact'}><li className='text-gray-500 hover:text-green-600 text-2xl'>Contact</li></Link>
-            <Link href={'#vison'}><li className='text-gray-500 hover:text-green-600 text-2xl'>Vision</li></Link>
+            <Link href={'#about'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-2xl'>About</li></Link>
+            <Link href={'#contact'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-2xl'>Contact</li></Link>
             <Link href={'#project'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-2xl'>Projects</li></Link>
         </ul>
         </div>

@@ -62,8 +62,8 @@ module.exports = {
       animation: {
         clouds: 'cloud 60s linear infinite',
         cloudsmg: 'cloud2 40s linear infinite',
-        texts: 'text 3s',
-        navbar: 'text 1s',
+        texts: 'text 1s',
+        navbar: 'text 0.5s',
         pulse1: 'pulse delay-1 1s infinite',
         pulse2: 'pulse delay-2 2s infinite',
         pulse3: 'pulse delay-3 3s infinite'
