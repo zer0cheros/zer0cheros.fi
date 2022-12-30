@@ -6,7 +6,7 @@ const About = () => {
     <div className='flex flex-col h-full w-full p-3'>
         <div className='w-full justify-center flex'></div>
         <div className='w-full h-full flex flex-col md:flex-row'>
-            <div className="md:w-[50%] w-full h-full bg-[url('/male.webp')] bg-cover rounded-xl shadow-xl md:bg-local bg-fixed">
+            <div className="md:w-[50%] w-full h-full bg-[url('/male.webp')] bg-cover rounded-xl shadow-xl">
             </div>
         <div className='md:w-[50%] w-full h-full m-2'>
             <div className='max-h-1/2'>

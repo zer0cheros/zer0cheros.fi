@@ -5,30 +5,31 @@ import Link from 'next/link'
 const Header = () => {
   const about = ()=>{
     window.scrollBy(0, 100 * window.innerHeight /100)
+    
   }
   const projects = ()=>{
     window.scrollBy(0, 610)
     setTimeout(()=>{
       window.scrollBy(0, 200 * window.innerHeight /100 - 610)
-    },400)
+    },500)
   }
   const projectsMobile = ()=>{
     window.scrollBy(0, 610)
     setTimeout(()=>{
       window.scrollBy(0, 300 * window.innerHeight /100 - 610)
-    },400)
+    },500)
   }
   const contact = ()=>{
     window.scrollBy(0, 610)
     setTimeout(()=>{
       window.scrollBy(0, 300 * window.innerHeight /100 - 610)
-    },400)
+    },500)
   }
   const contactMobile = ()=>{
     window.scrollBy(0, 610)
     setTimeout(()=>{
       window.scrollBy(0, 400 * window.innerHeight /100 - 610)
-    },400)
+    },500)
   }
   const [visible, setVisible] = useState(false)
   const toggleNavbar = () =>{
