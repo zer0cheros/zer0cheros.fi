@@ -3,6 +3,33 @@ import Link from 'next/link'
 
 
 const Header = () => {
+  const about = ()=>{
+    window.scrollBy(0, 100 * window.innerHeight /100)
+  }
+  const projects = ()=>{
+    window.scrollBy(0, 610)
+    setTimeout(()=>{
+      window.scrollBy(0, 200 * window.innerHeight /100 - 610)
+    },400)
+  }
+  const projectsMobile = ()=>{
+    window.scrollBy(0, 610)
+    setTimeout(()=>{
+      window.scrollBy(0, 300 * window.innerHeight /100 - 610)
+    },400)
+  }
+  const contact = ()=>{
+    window.scrollBy(0, 610)
+    setTimeout(()=>{
+      window.scrollBy(0, 300 * window.innerHeight /100 - 610)
+    },400)
+  }
+  const contactMobile = ()=>{
+    window.scrollBy(0, 610)
+    setTimeout(()=>{
+      window.scrollBy(0, 400 * window.innerHeight /100 - 610)
+    },400)
+  }
   const [visible, setVisible] = useState(false)
   const toggleNavbar = () =>{
     setVisible(true)
@@ -29,18 +56,18 @@ const Header = () => {
   </svg>
   {visible ? <div className="absolute z-20 animate-navbar right-0 top-24 rounded w-64 h-96 bg-white shadow-xl">
   <ul className='cursor-pointer h-full gap-8 pt-10' >
-            <Link href={'#about'} scroll={false} ><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>About</li></Link>
-            <Link href={'#contact'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>Contact</li></Link>
-            <Link href={'#project'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-4xl my-3'>Projects</li></Link>
+            <Link href={''} scroll={false} ><li onClick={about} className='text-gray-500 hover:text-green-600 text-4xl my-3'>About</li></Link>
+            <Link href={''} scroll={false}><li onClick={contactMobile} className='text-gray-500 hover:text-green-600 text-4xl my-3'>Contact</li></Link>
+            <Link href={''} scroll={false}><li onClick={projectsMobile} className='text-gray-500 hover:text-green-600 text-4xl my-3'>Projects</li></Link>
         </ul>
   </div>:null}
   
   </button>
   
         <ul className='cursor-pointer hidden md:flex animate-texts h-full items-center gap-8 p-2'>
-            <Link href={'#about'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-2xl'>About</li></Link>
-            <Link href={'#contact'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-2xl'>Contact</li></Link>
-            <Link href={'#project'} scroll={false}><li className='text-gray-500 hover:text-green-600 text-2xl'>Projects</li></Link>
+            <Link href={''} scroll={false}><li onClick={about} className='text-gray-500 hover:text-green-600 text-2xl'>About</li></Link>
+            <Link href={''} scroll={false}><li onClick={contact} className='text-gray-500 hover:text-green-600 text-2xl'>Contact</li></Link>
+            <Link href={''} scroll={false}><li onClick={projects} className='text-gray-500 hover:text-green-600 text-2xl'>Projects</li></Link>
         </ul>
         </div>
     </nav>
