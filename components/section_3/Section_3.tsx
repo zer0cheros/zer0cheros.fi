@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import React, {useState, Suspense} from 'react'
 
 const Work = dynamic(() => import('./Work'), {
-  suspense: true
+  suspense: true,
 })
 
 const Section_3 = () => {

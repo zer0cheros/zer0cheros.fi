@@ -8,28 +8,28 @@ const Header = () => {
     
   }
   const projects = ()=>{
-    window.scrollBy(0, 610)
+    window.scrollBy(0, 100 * window.innerHeight /100)
     setTimeout(()=>{
-      window.scrollBy(0, 200 * window.innerHeight /100 - 610)
+      window.scrollBy(0, 100 * window.innerHeight /100)
     },500)
   }
   const projectsMobile = ()=>{
-    window.scrollBy(0, 610)
+    window.scrollBy(0, 100 * window.innerHeight /100)
     setTimeout(()=>{
-      window.scrollBy(0, 300 * window.innerHeight /100 - 610)
-    },500)
+      window.scrollBy(0, 200 * window.innerHeight /100)
+    },600)
   }
   const contact = ()=>{
-    window.scrollBy(0, 610)
+    window.scrollBy(0, 100 * window.innerHeight /100)
     setTimeout(()=>{
-      window.scrollBy(0, 300 * window.innerHeight /100 - 610)
+      window.scrollBy(0, 200 * window.innerHeight /100)
     },500)
   }
   const contactMobile = ()=>{
-    window.scrollBy(0, 610)
+    window.scrollBy(0, 100 * window.innerHeight /100)
     setTimeout(()=>{
-      window.scrollBy(0, 400 * window.innerHeight /100 - 610)
-    },500)
+      window.scrollBy(0, 300 * window.innerHeight /100)
+    },600)
   }
   const [visible, setVisible] = useState(false)
   const toggleNavbar = () =>{

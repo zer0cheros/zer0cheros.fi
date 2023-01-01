@@ -105,9 +105,7 @@ const Cube = () => {
       <>
       <Canvas camera={{ position: [0, 0, 85], }}>
         <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
-      <React.Suspense>
       <Ocean />
-      </React.Suspense>
       <Flex position={[-30,15, 0]} flexDirection='row'>
       <Sky  />
       <ambientLight intensity={0.35} />
