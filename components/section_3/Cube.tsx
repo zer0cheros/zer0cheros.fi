@@ -7,6 +7,7 @@ import * as THREE from 'three'
 import {  Camera, Mesh, Plane } from "three"
 import { Water } from 'three-stdlib'
 import dynamic from 'next/dynamic'
+
 const Modal = dynamic(()=> import('./Modal'), {
   ssr: false
 })
@@ -32,6 +33,7 @@ declare module 'react' {
 const Cube = () => {
   const [visible, setVisible] = React.useState(false)
   const [id, setId] = React.useState(0)
+  const [size, setSize] = React.useState(0);
   const showModal = (id:number)=>{
     setVisible(true)
     setId(id)
@@ -101,9 +103,16 @@ const Cube = () => {
         </mesh>
       )
     }
+    React.useEffect(() => {
+      const s = () => {
+        setSize(window.innerWidth); 
+      }  
+      s()
+    }, [size]);
     return (
       <>
-      <Canvas camera={{ position: [0, 0, 85], }}>
+      {(size<600)?
+      <Canvas camera={{ position: [0, 0, 110], }}>
         <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
       <Ocean />
       <Flex position={[-30,15, 0]} flexDirection='row'>
@@ -121,7 +130,27 @@ const Cube = () => {
          </Box> 
       </Flex>     
     </Canvas>
-    {visible && <Modal setVisible={setVisible} id={id} /> }
+    :
+    <Canvas camera={{ position: [0, 0, 85], }}>
+    <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
+  <Ocean />
+  <Flex position={[-30,15, 0]} flexDirection='row'>
+  <Sky  />
+  <ambientLight intensity={0.35} />
+  <directionalLight position={[100, 50, 4]} />
+    <Box margin={1} >
+    <Project1 />
+     </Box> 
+    <Box margin={1} >
+    <Project2/>
+     </Box> 
+    <Box margin={1} >
+    <Project3/>
+     </Box> 
+  </Flex>     
+</Canvas>
+}
+{visible && <Modal setVisible={setVisible} id={id} /> }
       </>
   )
 }
