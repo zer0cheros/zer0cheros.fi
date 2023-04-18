@@ -19,7 +19,7 @@ const Background = () => {
     <div className="bg-[url('/layer_1.webp')] bg-no-repeat bg-center bg-cover shadow-xl">
         <Header />
         <Mountain />
-        <div className='absolute z-10 md:top-[10%] top-[20%] w-full h-screen text-center'>
+        <div className='absolute z-10 md:top-[10%] top-[20%] w-full h-[80%] text-center'>
             <div className='flex justify-center'>
                 <h1 style={{textShadow:'3px -1px 400px black'}} className='xl:text-[11rem] md:text-[5rem] text-[2.5rem]  font-medium text-white py-6 border-white'>Zer0<span style={{textShadow:'2px 1px 2px black'}} className=' text-green-600 flex-none xl:text-[11rem] md:text-[5rem] text-[2.5rem] w-auto font-medium py-6'>{text}</span><Cursor /></h1>
             </div>

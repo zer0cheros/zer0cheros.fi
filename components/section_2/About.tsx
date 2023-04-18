@@ -4,9 +4,9 @@ import React from 'react'
 const About = () => {
   return (
     <div className='flex flex-col h-full w-full p-3'>
-        <div className='w-full justify-center flex'></div>
+        <div className='w-full justify-center flex bg-cover'></div>
         <div className='w-full h-full flex flex-col md:flex-row'>
-            <div className="md:w-[50%] w-full h-full bg-[url('/me2.webp')] bg-cover rounded-xl shadow-xl">
+            <div className="md:w-[50%] w-full h-full max-md:bg-fixed  max-md:bg-cover bg-[url('/me2.webp')] bg-cover bg-no-repeat shadow-xl">
             </div>
         <div className='md:w-[50%] w-full h-full m-2'>
             <div className='max-h-1/2'>
