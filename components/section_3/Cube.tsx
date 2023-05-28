@@ -41,7 +41,7 @@ const Cube = () => {
   function Ocean() {
     const ref = React.useRef<THREE.PlaneGeometry | any>(null) 
     const gl = useThree((state) => state.gl)
-    const waterNormals = useLoader(THREE.TextureLoader, '/waternormals.jpeg')
+    const waterNormals = useLoader(THREE.TextureLoader, '/waternormals.webp')
     waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping
     waterNormals.dispose()
     const geom = React.useMemo(() => new THREE.PlaneGeometry(1000, 1000), [])
@@ -62,7 +62,7 @@ const Cube = () => {
     return  <water ref={ref} args={[geom, config]} rotation-x={-Math.PI / 2} />
   }
   function Project1(props:Props){
-    const optidev = useLoader(TextureLoader, '/optidev.PNG')
+    const optidev = useLoader(TextureLoader, '/optidev.webp')
     optidev.encoding = THREE.sRGBEncoding
     optidev.dispose()
     const boxRef = React.useRef<Mesh>(null)
@@ -76,7 +76,7 @@ const Cube = () => {
       )
     }
   function Project2(props:Props){
-    const termDocker = useLoader(TextureLoader, '/term.PNG')
+    const termDocker = useLoader(TextureLoader, '/term.webp')
     termDocker.encoding = THREE.sRGBEncoding
     termDocker.dispose()
     const boxRef = React.useRef<Mesh>(null)

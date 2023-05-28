@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Header = () => {
@@ -41,7 +42,7 @@ const Header = () => {
   return (
     <nav className='absolute z-20 w-full align-center h-24 bg-transparent '>
         <div className='flex h-full justify-between align-center shadow-sm md:px-32 px-12'>
-        <img className='animate-texts mb-2 mt-2 rounded-full shadow-2xl' src="logo.webp" alt="" />
+        <Image className='animate-texts mb-2 mt-2 rounded-full shadow-2xl' src={"/logo.webp"} alt="zer0cheros.fi logo" width={80} height={80} />
         <button onClick={toggleNavbar} className=" md:hidden text-gray-500
       border-0
       hover:shadow-none hover:no-underline
