@@ -11,7 +11,7 @@
     "@react-three/drei": "^9.45.0",
     "@react-three/fiber": "^8.9.1",
     "@react-three/flex": "^1.0.0",
-    "next": "latest",
+    "next": "^13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scroll-into-view": "^1.12.0",
