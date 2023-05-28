@@ -11,6 +11,7 @@ import dynamic from 'next/dynamic'
 const Modal = dynamic(()=> import('./Modal'), {
   ssr: false
 })
+
 extend({ Water })
 
 type Props = {
@@ -103,34 +104,8 @@ const Cube = () => {
         </mesh>
       )
     }
-    React.useEffect(() => {
-      const s = () => {
-        setSize(window.innerWidth); 
-      }  
-      s()
-    }, [size]);
     return (
       <>
-      {(size<600)?
-      <Canvas camera={{ position: [0, 0, 110], }}>
-        <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
-      <Ocean />
-      <Flex position={[-30,15, 0]} flexDirection='row'>
-      <Sky  />
-      <ambientLight intensity={0.35} />
-      <directionalLight position={[100, 50, 4]} />
-        <Box margin={1} >
-        <Project1 />
-         </Box> 
-        <Box margin={1} >
-        <Project2/>
-         </Box> 
-        <Box margin={1} >
-        <Project3/>
-         </Box> 
-      </Flex>     
-    </Canvas>
-    :
     <Canvas camera={{ position: [0, 0, 85], }}>
     <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 6} maxPolarAngle={Math.PI / 2.5} />
   <Ocean />
@@ -149,7 +124,6 @@ const Cube = () => {
      </Box> 
   </Flex>     
 </Canvas>
-}
 {visible && <Modal setVisible={setVisible} id={id} /> }
       </>
   )
