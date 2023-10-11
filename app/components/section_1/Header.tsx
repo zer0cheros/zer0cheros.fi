@@ -5,32 +5,19 @@ import Image from 'next/image'
 
 const Header = () => {
   const about = ()=>{
-    window.scrollBy(0, 100 * window.innerHeight /100)
-    
+    window.scrollBy(0, 120 * window.innerHeight /100)  
   }
   const projects = ()=>{
-    window.scrollBy(0, 100 * window.innerHeight /100)
-    setTimeout(()=>{
-      window.scrollBy(0, 100 * window.innerHeight /100)
-    },500)
+    window.scrollBy(0, 230 * window.innerHeight /100)   
   }
   const projectsMobile = ()=>{
-    window.scrollBy(0, 100 * window.innerHeight /100)
-    setTimeout(()=>{
-      window.scrollBy(0, 200 * window.innerHeight /100)
-    },600)
+    window.scrollBy(0, 360 * window.innerHeight /100)  
   }
   const contact = ()=>{
-    window.scrollBy(0, 100 * window.innerHeight /100)
-    setTimeout(()=>{
-      window.scrollBy(0, 200 * window.innerHeight /100)
-    },500)
+    window.scrollBy(0, 360 * window.innerHeight /100)
   }
   const contactMobile = ()=>{
-    window.scrollBy(0, 100 * window.innerHeight /100)
-    setTimeout(()=>{
-      window.scrollBy(0, 300 * window.innerHeight /100)
-    },600)
+    window.scrollBy(0, 450 * window.innerHeight /100)
   }
   const [visible, setVisible] = useState(false)
   const toggleNavbar = () =>{
@@ -40,7 +27,7 @@ const Header = () => {
     }
   }
   return (
-    <nav className='absolute z-20 w-full align-center h-24 bg-transparent '>
+    <nav className='absolute z-[100] w-full align-center h-24 bg-transparent '>
         <div className='flex h-full justify-between align-center shadow-sm md:px-32 px-12'>
         <Image className='animate-texts mb-2 mt-2 rounded-full shadow-2xl' src={"/logo.webp"} alt="zer0cheros.fi logo" width={80} height={80} />
         <button onClick={toggleNavbar} className=" md:hidden text-gray-500
@@ -58,18 +45,18 @@ const Header = () => {
   </svg>
   {visible ? <div className="absolute z-20 animate-navbar right-0 top-24 rounded w-64 h-96 bg-white shadow-xl">
   <ul className='cursor-pointer h-full gap-8 pt-10' >
-            <Link href={''} scroll={false} ><li onClick={about} className='text-gray-500 hover:text-green-600 text-4xl my-3'>About</li></Link>
-            <Link href={''} scroll={false}><li onClick={contactMobile} className='text-gray-500 hover:text-green-600 text-4xl my-3'>Contact</li></Link>
-            <Link href={''} scroll={false}><li onClick={projectsMobile} className='text-gray-500 hover:text-green-600 text-4xl my-3'>Projects</li></Link>
+            <Link href={'about'} scroll={false} ><li onClick={about} className='text-gray-500 hover:text-green-600 text-4xl my-3'>About</li></Link>
+            <Link href={'contact'} scroll={false}><li onClick={contactMobile} className='text-gray-500 hover:text-green-600 text-4xl my-3'>Contact</li></Link>
+            <Link href={'projects'} scroll={false}><li onClick={projectsMobile} className='text-gray-500 hover:text-green-600 text-4xl my-3'>Projects</li></Link>
         </ul>
   </div>:null}
   
   </button>
   
         <ul className='cursor-pointer hidden md:flex animate-texts h-full items-center gap-8 p-2'>
-            <Link href={''} scroll={false}><li onClick={about} className='text-gray-500 hover:text-green-600 text-2xl'>About</li></Link>
-            <Link href={''} scroll={false}><li onClick={contact} className='text-gray-500 hover:text-green-600 text-2xl'>Contact</li></Link>
-            <Link href={''} scroll={false}><li onClick={projects} className='text-gray-500 hover:text-green-600 text-2xl'>Projects</li></Link>
+            <Link href={'#about'} scroll={false}><li onClick={about} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'>About</li></Link>
+            <Link href={'#contact'} scroll={false}><li onClick={contact} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'>Contact</li></Link>
+            <Link href={'#projects'} scroll={false}><li onClick={projects} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'>Projects</li></Link>
         </ul>
         </div>
     </nav>
