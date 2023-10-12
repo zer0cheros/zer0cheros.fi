@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div id='contact' className='w-full h-96 bg-green-600 flex justify-center items-center flex-col gap-3'>
+    <div id='contact' className='w-full h-96 bg-green-700 flex justify-center items-center flex-col gap-3'>
       <h1 className='font-mono text-3 text-slate-50 text-4xl'>Get in touch!</h1>
       <h2 className='text-slate-50 text-xl'>Christian Wiss</h2>
       <h3 className='text-slate-50 text-xl'>christian.wiss@optiamaedu.fi</h3>

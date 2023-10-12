@@ -121,7 +121,7 @@ const CardStack = () => {
               }}
             >
               <div className="bg-slate-50 p-5 shadow-2xl rounded-lg drop-shadow-lg">
-                <h1 className="text-3xl max-md:text-xl text-green-600">{color.name}</h1>
+                <h1 className="text-3xl max-md:text-xl text-green-700">{color.name}</h1>
               </div>
               
               {visibe &&  <Modal setVisible={visibe} id={color.id} text={color.text} url={color.url} name={color.name}/> }
