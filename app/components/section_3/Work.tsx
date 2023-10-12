@@ -10,7 +10,7 @@ const work = [
     bg: "#266678",
     name: "Optidev, Learning platform for students",
     url: "https://optidev.fi",
-    img: "/optidev.webp",
+    img: "/optidev_50.webp",
     text: 'Optidev is a comprehensive web application built using a full-stack technology stack that incorporates Next.js, Prisma, and MongoDB. The application encompasses various pages, including an administrator dashboard where users can manage other users, create quizzes, and add questions for students. Optidev serves as a community hub for students to track their learning progress and access courses. Security measures are implemented through NextAuth.js and custom provider configurations to safeguard routes and data.'
   },
   {
@@ -76,9 +76,9 @@ const CardStack = () => {
   };
 
   return (
+  <FadeIn>
     <div className="relative w-full h-full flex items-start -mt-6 justify-end max-md:justify-center">
       <ul className="relative h-[80%] w-[80%]">
-      <FadeIn>
         {cards.map((color, index) => {
           const canDrag = index === 0;
           return (
@@ -129,9 +129,10 @@ const CardStack = () => {
            
           );
         })}
-        </FadeIn>
+        
       </ul>
     </div>
+    </FadeIn>
   );
 };
 
