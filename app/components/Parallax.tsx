@@ -14,7 +14,7 @@ const Parallax = ({ children, offset = 50 }: ParallaxProps): JSX.Element => {
 
   const { scrollY } = useScroll();
 
-  const initial = elementTop - offset;
+  const initial = elementTop - offset - clientHeight / 2;
   const final = elementTop + offset;
 
   const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);

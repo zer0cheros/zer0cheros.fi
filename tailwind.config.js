@@ -14,7 +14,7 @@ module.exports = {
         left: 'left',
         'left-bottom': 'left bottom',
         'left-top': 'left top',
-        right: 'right -6rem bottom 0rem',
+        right: 'right -4rem bottom 0rem',
         'right-bottom': 'right bottom',
         'right-top': 'right top',
         top: 'top',

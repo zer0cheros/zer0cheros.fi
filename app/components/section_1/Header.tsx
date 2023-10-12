@@ -52,7 +52,6 @@ const Header = () => {
   </div>:null}
   
   </button>
-  
         <ul className='cursor-pointer hidden md:flex animate-texts h-full items-center gap-8 p-2'>
             <Link href={'#about'} scroll={false}><li onClick={about} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'>About</li></Link>
             <Link href={'#contact'} scroll={false}><li onClick={contact} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'>Contact</li></Link>

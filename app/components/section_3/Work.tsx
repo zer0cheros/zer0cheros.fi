@@ -32,15 +32,15 @@ const work = [
   {
     id: 4,
     bg: "#cda35f",
-    name: "@zer0cheros/simple-react-server",
+    name: "simple-react-server",
     url: "https://www.npmjs.com/package/@zer0cheros/simple-react-server",
     img: "/npm.webp",
     text: 'A method for testing your React application against a simple and minimal backend API server. The server is a mix of express package and knex package. Simplifying coding for a more enjoyable experience.'
   },
 ];
 
-const CARD_OFFSET = 30;
-const SCALE_FACTOR = 0.06;
+const CARD_OFFSET = 20;
+const SCALE_FACTOR = 0.04;
 
 interface CardPosition {
   index: number;
@@ -121,7 +121,7 @@ const CardStack = () => {
               }}
             >
               <div className="bg-slate-50 p-5 shadow-2xl rounded-lg drop-shadow-lg">
-                <h1 className="text-3xl text-green-600">{color.name}</h1>
+                <h1 className="text-3xl max-md:text-xl text-green-600">{color.name}</h1>
               </div>
               
               {visibe &&  <Modal setVisible={visibe} id={color.id} text={color.text} url={color.url} name={color.name}/> }
