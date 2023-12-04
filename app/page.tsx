@@ -2,7 +2,7 @@ import React from 'react'
 import Page from './components/Page'
 
 
-//hej
+
 
 export default function Home() {
   return (
