@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
-import { ProfilePageJsonLd } from 'next-seo';
+
 import type { Metadata } from 'next';
 
 
@@ -24,27 +24,7 @@ export default async function RootLayout({
         {children}           
         </body>
         <Analytics />
-        <ProfilePageJsonLd
-      lastReviewed="2014-10-01T19:30"
-      useAppDir={true}
-      breadcrumb={[
-        {
-          position: 1,
-          name: 'Abour me',
-          item: 'https://zer0cheros.fi/#abouts',
-        },
-        {
-          position: 2,
-          name: 'projects',
-          item: 'https://zer0cheros.fi/#projects',
-        },
-        {
-          position: 3,
-          name: 'contact',
-          item: 'https://zer0cheros.fi/#contact',
-        },
-      ]}
-    />
+        
     </html>
   )
 }
