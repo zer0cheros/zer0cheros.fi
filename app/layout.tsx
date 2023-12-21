@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata:Metadata = {
   title: 'Zer0cheros.fi',
-  description: 'Hi, im Zer0cheros, teachering development for students ', 
+  description: 'Hi, im Zer0cheros, teachering development for students in Pietarsaari, Finland. Creating and sharing knowledge is my passion.With over 8 years experience working as a teacher and couple of yeas working with development in classrooms.', 
 }
 export default async function RootLayout({
   children,
@@ -20,6 +20,7 @@ export default async function RootLayout({
     <html lang="en">
       <meta name="google-site-verification" content="Dyh_biTQza4pp3-P5BtTrjft_H9pha5eVGaFx6GsGbc" />
       <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="canonial" href="https://zer0cheros.fi" />
       <body className={inter.className}>
         {children}           
         </body>
