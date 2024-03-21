@@ -20,6 +20,7 @@ module.exports = {
         top: 'top',
         'top-4': 'center top 6rem',
       },
+      backgroundOpacity: ['active'],
       fontFamily: {
         font1:  ['Zen Dots', 'cursive'],
         font2: ['Lato', 'sans-serif']
