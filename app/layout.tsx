@@ -12,7 +12,11 @@ export const metadata:Metadata = {
   description: 'Hi, im Zer0cheros, teachering development for students in Pietarsaari, Finland. Creating and sharing knowledge is my passion.With over 8 years experience working as a teacher and couple of yeas working with development in classrooms.', 
   alternates: {
     canonical: 'https://www.zer0cheros.fi',
-  }
+  },
+  referrer: 'origin-when-cross-origin',
+  authors: [{ name: 'Zer0cheros' ,url: 'https://www.zer0cheros.fi' }],
+  creator: 'Christian Wiss',
+  keywords : ['development', 'kokkola', 'jakobstad', 'teacher', 'programutvecklare', 'Optima']
 }
 export default async function RootLayout({
   children,
