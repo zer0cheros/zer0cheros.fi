@@ -16,7 +16,13 @@ export const metadata:Metadata = {
   referrer: 'origin-when-cross-origin',
   authors: [{ name: 'Zer0cheros' ,url: 'https://www.zer0cheros.fi' }],
   creator: 'Christian Wiss',
-  keywords : ['development', 'kokkola', 'jakobstad', 'teacher', 'programutvecklare', 'Optima']
+  keywords : ['development', 'kokkola', 'jakobstad', 'teacher', 'programutvecklare', 'Optima'],
+  publisher: 'Christian Wiss',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 }
 export default async function RootLayout({
   children,
