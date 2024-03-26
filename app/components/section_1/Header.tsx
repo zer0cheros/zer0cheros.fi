@@ -45,9 +45,9 @@ const Header = () => {
   </svg>
   {visible ? <div className="absolute z-20 animate-navbar right-0 top-24 rounded w-64 h-96 bg-white shadow-xl">
   <ul className='cursor-pointer h-full gap-8 pt-10' >
-            <Link href={'about'} scroll={false} ><li onClick={about} className='text-gray-500 hover:text-green-700 text-4xl my-3'>About</li></Link>
-            <Link href={'contact'} scroll={false}><li onClick={contactMobile} className='text-gray-500 hover:text-green-700 text-4xl my-3'>Contact</li></Link>
-            <Link href={'projects'} scroll={false}><li onClick={projectsMobile} className='text-gray-500 hover:text-green-700 text-4xl my-3'>Projects</li></Link>
+            <Link href={'#about'} scroll={false} ><li onClick={about} className='text-gray-500 hover:text-green-700 text-4xl my-3'>About</li></Link>
+            <Link href={'#contact'} scroll={false}><li onClick={contactMobile} className='text-gray-500 hover:text-green-700 text-4xl my-3'>Contact</li></Link>
+            <Link href={'#projects'} scroll={false}><li onClick={projectsMobile} className='text-gray-500 hover:text-green-700 text-4xl my-3'>Projects</li></Link>
         </ul>
   </div>:null}
   

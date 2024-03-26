@@ -31,7 +31,7 @@ module.exports = {
             marginLeft: '-50%',
         },
         '50%': {
-          marginLeft: '30%',
+          marginLeft: '50%',
           backgroundPosition: '-30%'
         },
         '100%' :{
@@ -40,15 +40,15 @@ module.exports = {
         },
         cloud2: {
         '0%' : {
-            marginLeft: '-150%',
+            marginLeft: '-120%',
         },
         '50%': {
-          marginLeft: '-50%',
+          marginLeft: '10%',
           backgroundPosition: '50%'
           
         },
         '100%' :{
-          marginLeft: '-150%'
+          marginLeft: '-120%'
         }
         },
         text: {
@@ -75,7 +75,7 @@ module.exports = {
       },
       animation: {
         clouds: 'cloud 60s linear infinite',
-        cloudsmg: 'cloud2 40s linear infinite',
+        cloudsmg: 'cloud2 45s linear infinite',
         texts: 'text 1s',
         navbar: 'text 0.5s',
         pulse1: 'pulse delay-1 1s infinite',
