@@ -1,11 +1,11 @@
 import '../styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Zen_Dots } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 
 import type { Metadata } from 'next';
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Zen_Dots({ subsets: ['latin'], weight: '400' })
 
 export const metadata:Metadata = {
   title: 'Zer0cheros.fi',
@@ -16,7 +16,7 @@ export const metadata:Metadata = {
   referrer: 'origin-when-cross-origin',
   authors: [{ name: 'Zer0cheros' ,url: 'https://www.zer0cheros.fi' }],
   creator: 'Christian Wiss',
-  keywords : ['development', 'kokkola', 'jakobstad', 'teacher', 'programutvecklare', 'Optima'],
+  keywords : ['development', 'kokkola', 'jakobstad', 'pietarsaari', 'teacher', 'programutvecklare', 'Optima', 'programmering', 'ohjelmointi'],
   publisher: 'Christian Wiss',
   formatDetection: {
     email: false,

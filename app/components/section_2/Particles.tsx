@@ -52,8 +52,8 @@ const ParticlesComponent = ({color}:{color:string}) => {
             quantity: 4,
           },
           repulse: {
-            distance: 10,
-            duration: 0.4,
+            distance: 100,
+            duration: 0.8,
           },
         },
       },
@@ -63,7 +63,7 @@ const ParticlesComponent = ({color}:{color:string}) => {
         },
         links: {
           color: '#15803d',
-          distance: 100,
+          distance: 110,
           enable: true,
           opacity: 0.6,
           width: 4.5,
@@ -75,20 +75,17 @@ const ParticlesComponent = ({color}:{color:string}) => {
             default: OutMode.out,
           },
           random: true,
-          speed: 5,
+          speed: 6,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 220,
+          value: 200,
         },
         opacity: {
-          value: 0.5,
-        },
-        shape: {
-          type: "circle",
+          value: 0.6,
         },
         size: {
           value: { min: 1, max: 4 },
