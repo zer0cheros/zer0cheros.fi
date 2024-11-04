@@ -41,7 +41,7 @@ useLayoutEffect(() => {
   }
 
   return (
-    <motion.div className="h-full z-50 relative" ref={ref} style={{ y }}>
+    <motion.div className="h-full z-30 relative" ref={ref} style={{ y }}>
       {children}
     </motion.div>
   );

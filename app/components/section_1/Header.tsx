@@ -19,6 +19,9 @@ const Header = () => {
   const contactMobile = ()=>{
     window.scrollBy(0, 450 * window.innerHeight /100)
   }
+  const htb = ()=>{
+    window.open('https://writeups.zer0cheros.fi')
+  }
   const [visible, setVisible] = useState(false)
   const toggleNavbar = () =>{
     setVisible(true)
@@ -48,6 +51,7 @@ const Header = () => {
             <Link href={'#about'} scroll={false} ><li onClick={about} className='text-gray-500 hover:text-green-700 text-4xl my-3'>About</li></Link>
             <Link href={'#contact'} scroll={false}><li onClick={contactMobile} className='text-gray-500 hover:text-green-700 text-4xl my-3'>Contact</li></Link>
             <Link href={'#projects'} scroll={false}><li onClick={projectsMobile} className='text-gray-500 hover:text-green-700 text-4xl my-3'>Projects</li></Link>
+            <Link href={'https://writeups.zer0cheros.fi'} scroll={false}><li  className='text-green-700 hover:text-gray-500 text-4xl my-3'>HTB</li></Link>
         </ul>
   </div>:null}
   
@@ -56,6 +60,7 @@ const Header = () => {
             <li onClick={about} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'><Link href={'#about'} scroll={false}>About</Link></li>
             <li onClick={contact} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'><Link href={'#contact'} scroll={false}>Contact</Link></li>
             <li onClick={projects} style={{textShadow:'2px 1px 4px black'}} className='text-gray-100 hover:text-green-600 text-2xl'><Link href={'#projects'} scroll={false}>Projects</Link></li>
+            <li onClick={htb} style={{textShadow:'2px 1px 4px black'}} className='text-green-600 hover:text-gray-100 text-2xl'><Link href={'#projects'} scroll={false}>HTB</Link></li>
         </ul>
         </div>
     </nav>

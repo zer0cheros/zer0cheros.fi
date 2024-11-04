@@ -13,10 +13,8 @@ const Page = () => {
     return (
       <>
         <Section_1 />
-        <div style={{backgroundPositionY: '-600px'}} className="bg-fixed bg-cover relative  bg-[url('/4.webp')]">
         <Section_2 />
         <Section_3/>
-        </div>
         <Footer />
       </>
     )
