@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import About from './About'
 import { FadeIn } from '../FadeIn'
 import dynamic from 'next/dynamic'
@@ -15,7 +15,10 @@ const Section_2 = () => {
       <About/>
       </div>
     </FadeIn>
-      <ParticlesComponent color={'#15803d'} /> </>  
+    <Suspense fallback={'..loading'}>
+      <ParticlesComponent color={'#15803d'} />
+    </Suspense>
+       </>  
 
   )
 }

@@ -34,7 +34,7 @@ function Card({ id, back, front}:CardType) {
             With over 8 years experience working as a teacher and couple of yeas working with development in classrooms. We produce exciting and innovative projects.
             </p>
             <div className=''>
-            <h1 className='md:text-3xl text-lg text-center md:mt-5 text-green-700' >Frontend</h1>
+            <h1 className='md:text-3xl text-lg text-center md:mt-5 text-slate-50' >Frontend</h1>
             <ul className='flex flex-wrap md:p-4 p-1 md:gap-6 gap-2 w-full h-full items-center justify-center text-center'>
               <li className="w-auto h-12">
                   <svg className="w-auto m-auto md:h-full h-8 animate-[pulse_1s_infinite]" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="m9.032 2 10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"></path></svg>
